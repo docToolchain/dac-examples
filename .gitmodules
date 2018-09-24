@@ -1,0 +1,6 @@
+[submodule "htmlSanityCheck"]
+	path = htmlSanityCheck
+	url = git@github.com:aim42/htmlSanityCheck.git
+[submodule "HHGDAC"]
+	path = HHGDAC
+	url = git@github.com:arc42/HHGDAC.git
