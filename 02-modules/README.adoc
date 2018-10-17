@@ -1,0 +1,38 @@
+= image:../hhgdac-logo.png[] Folge-2: Modularisierung
+
+[small]
+--
+Source und Infos zur JavaMagazin-Kolumne von
+https://rdmueller.github.io/[R.D. Müller] und
+http://gernotstarke.de[G. Starke]
+
+https://jaxenter.de/documentation-modularisierung-63743[Folge 2: Modulare Dokumentationen: Wie man sie baut und warum sie die Teamarbeit erleichtern]
+
+--
+
+
+Diesmal geht es um die Aufteilung von Dokumentation in einzelne Teile -
+damit auch (größere) Teams die Arbeit an Doku ordentlich aufteilen können:
+
+Wir zeigen, wie Sie Dokumentation auf verschiedene Teile ("Module")
+aufteilen können, und diese in AsciiDoc durch 'include' Statements
+wieder zusammenfügen.
+
+AsciiDoc stellt dafür einen leistungsfähigen Befehl bereit:
+
+`include::path[]`
+
+Wir fangen mit einem kleinen Beispiel an -
+ein Masterdokument inkludiert zwei andere Dateien,
+die ein einem Unterverzeichnis `kapitel` liegen.
+
+Aber sehen Sie selbst:
+
+    cd folge-2
+    ./gradlew asciidoctor
+
+
+Falls Sie Gradle bereits installiert haben, geht's auch so:
+
+    cd folge-2
+    gradle asciidoctor
